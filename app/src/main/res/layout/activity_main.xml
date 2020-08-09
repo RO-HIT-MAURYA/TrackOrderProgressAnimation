@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:progressDrawable="@drawable/progress_bg"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:progressTint="@color/colorPrimary"
+                android:progress="47" />
+
+            <ImageView
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:padding="8dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_arrow_drop_down_circle_24"
+                android:background="#00000000"/>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="?actionBarSize"/>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+</layout>
